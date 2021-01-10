@@ -20,7 +20,8 @@
             console.log('Component mounted.')
             window.Echo.channel('notification-event')
                 .listen('NotificationEvent', (e) => {
-                    alert(`title: ${e.title} , message: ${e.message}`)
+                    console.log(e);
+                    //alert(`title: ${e.title} , message: ${e.message}`)
                 });
         }
     }

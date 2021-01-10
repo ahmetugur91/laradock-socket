@@ -1865,7 +1865,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     console.log('Component mounted.');
     window.Echo.channel('notification-event').listen('NotificationEvent', function (e) {
-      alert("title: ".concat(e.title, " , message: ").concat(e.message));
+      console.log(e); //alert(`title: ${e.title} , message: ${e.message}`)
     });
   }
 });
